@@ -1,3 +1,5 @@
+@import './variables.scss'; 
+
 * {
     margin: 0;
     padding: 0;
@@ -6,8 +8,28 @@
 
 body {
     font-family: "Roboto", sans-serif;
+    background-color: $background-color-dark;
+    padding: 0px 24px;
 }
 
 h1, h2, h3 {
     font-family: "Archivo Black", sans-serif;
+}
+
+@media (min-width: 768px) {
+    body {
+        padding: 0px 32px;
+    }
+}
+
+@media (min-width: 1024px) {
+    body {
+        padding: 0px 80px;
+    }
+}
+
+@media (min-width: 1440px) {
+    body {
+        padding: 0px 180px;
+    }
 }
