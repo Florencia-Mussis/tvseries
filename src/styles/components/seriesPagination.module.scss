@@ -1,0 +1,22 @@
+@import '../variables'; 
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    button {
+        background-color: unset;
+        border: none;
+
+        &:disabled {
+            display: none;
+        }
+    }
+
+    span {
+        color: $text-color;
+    }
+}
+  
