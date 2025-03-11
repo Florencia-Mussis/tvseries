@@ -1,7 +1,7 @@
 import React from 'react'
 import type { Metadata } from 'next'
 import { Archivo_Black, Roboto } from 'next/font/google'
-import '../styles/globals.scss'
+import '../styles/base/globals.scss'
 import { Header } from '../components/Header'
 import { Footer } from '../components/Footer'
 
