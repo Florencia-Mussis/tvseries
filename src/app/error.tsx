@@ -9,7 +9,7 @@ interface ErrorPageProps {
   reset: () => void;
 }
 
-const ErrorPage = ({ error, reset }: ErrorPageProps) => {
+const ErrorPage = ({ error }: ErrorPageProps) => {
   useEffect(() => {
     console.error(error)
   }, [error])
