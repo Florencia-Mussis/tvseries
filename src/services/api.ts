@@ -16,7 +16,7 @@ const fetchFromAPI = async <T>(endpoint: string, params: Record<string, string> 
   const data = await res.json()
 
   if (!res.ok) {
-    throw  { status: data.status_code }
+    throw { status: data.status_code, message: data.status_message || 'Error desconocido' }
   }
 
   return data
